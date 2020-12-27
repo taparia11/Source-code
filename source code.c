@@ -5,9 +5,11 @@ int add (int a,int b)
     printf("%d",a+b);
 }
 
-void main()
+int main()
 {
-    int a,b;
+    int c,a,b;
     scanf("%d %d",&a,&b);
+	add(a,b);
 
+    return 0;
 }
