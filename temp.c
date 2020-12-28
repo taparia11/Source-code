@@ -6,10 +6,10 @@ int numind(int n);
 
 int main()
 {
-    int c=100,i,j,x,y=0,z,t,p,q;
+    int c=100,i,j,x,y=0,z,t,p,q,f;
 
     scanf("%d",&t);
-    int a[t],b[t];
+    int a[t],b[t],v[t];
 
     for(i=1;i<=t;i++)
     {
@@ -37,13 +37,39 @@ int main()
  
                 }
             }
-        }       i=1;
+        }       i=1;f=t;
                 do
                 {
                     printf("%d ",a[i]);
                     i++;
                 } while (--t);
-                
+    t=f; y=0;
+    for(i=1;i<=t;i++)
+    {
+        x=numind(a[i]);
+        y+=i*x;
+        b[i]=x;
+    }
+        for(i=1;i<t;i++)
+        {
+            if(b[i] == b[i+1])
+           { p=a[i];
+            a[i]=a[i+1];
+            a[i+1]=p;}
+          
+       
+       }
+       printf("\n");
+           i=1;
+                do
+                {
+                    printf("%d ",a[i]);
+                    i++;
+                } while (--t);
+   t=f;
+            
+        printf("\nMaximum sequence weight = %d",y);
+
     return 0;
 
 }
