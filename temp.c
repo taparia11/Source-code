@@ -37,10 +37,11 @@ int main()
  
                 }
             }
-        }       i=1;f=t;
+        }     
+          i=1;f=t;
                 do
                 {
-                    printf("%d ",a[i]);
+                   v[i]=a[i];
                     i++;
                 } while (--t);
     t=f; y=0;
@@ -67,6 +68,12 @@ int main()
                     i++;
                 } while (--t);
    t=f;
+ i=1;
+   do
+                {
+                    printf("%d ",v[i]);
+                    i++;
+                } while (--t);
             
         printf("\nMaximum sequence weight = %d",y);
 
