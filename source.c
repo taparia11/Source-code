@@ -6,7 +6,7 @@ int add (int a,int b)
 }
 
 int main()
-{
+{//nvsdhvbsdhvsd
     int c,a,b;
     scanf("%d %d",&a,&b);
 	add(a,b);

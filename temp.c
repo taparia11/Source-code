@@ -38,7 +38,7 @@ int main()
                 }
             }
         }     
-          i=1;f=t;
+          i=1;f=t;// avik sarkar
                 do
                 {
                    v[i]=a[i];
