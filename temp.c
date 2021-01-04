@@ -38,7 +38,7 @@ int main()
                 }
             }
         }     
-          i=1;f=t;// avik 
+          i=1;f=t;// avik nikhil
                 do
                 {
                    v[i]=a[i];
