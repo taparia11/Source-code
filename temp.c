@@ -1,22 +1,19 @@
 #include <stdio.h>
 #include <string.h>
 
-int numind(int n);
-
+int sumd(int num);
+void superd(int);
 
 int main()
 {
-    int c=100,i,j,x,y=0,z,t,p,q,f;
+    int a,b,c,i,j,x,y=0,z,t,p,q,f,num;
 
-    scanf("%d",&t);
-    int a[t],b[t],v[t];
-
-    for(i=1;i<=t;i++)
+    scanf("%d %d",&num,&b);
+    c=sumd(num);
+    num=c*b;
+    for (i = 0; i <b; i++)
     {
-        scanf("%d",&a[i]);
-        x=numind(a[i]);
-        y+=i*x;
-        b[i]=x;
+        y+=c;
     }
         printf("Weight of input sequence = %d\nSequence that has maximum weight\n",y);
 
@@ -38,7 +35,11 @@ int main()
                 }
             }
         }     
+<<<<<<< HEAD
           i=1;f=t;// avik nikhil
+=======
+          i=1;f=t;
+>>>>>>> 5cb317cce03923e9bc4d60cf448d871e71bc82cf
                 do
                 {
                    v[i]=a[i];
@@ -57,7 +58,7 @@ int main()
            { p=a[i];
             a[i]=a[i+1];
             a[i+1]=p;}
-          
+          //nikhil
        
        }
        printf("\n");
@@ -81,15 +82,32 @@ int main()
 
 }
 
-int numind(int n)
+int sumd(int num)
+
 {
-    int g,h=0;
+    int g,h=0,p;
+
+    if(num>=10){
     do
     {
-        g=n%10;
+        g=num%10;
         h+=g;
-        n=n/10;
+        num=num/10;
 
-    } while (n>0);
+    } while (num>0);
+    if(h>10)
+    p=sumd(h);}
+
+    else
+    return num;
+
+
     return h;
 }
+
+void superd(int num)
+{
+    printf("%d",num);
+
+}
+
