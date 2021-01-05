@@ -57,7 +57,7 @@ int main()
            { p=a[i];
             a[i]=a[i+1];
             a[i+1]=p;}
-          
+          //nikhil
        
        }
        printf("\n");
