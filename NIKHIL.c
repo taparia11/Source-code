@@ -1,5 +1,4 @@
 #include <stdio.h>
-<<<<<<< HEAD
 int main() {
    int arr[100],t,k,x,a,b,c,d,i,j,p;
   scanf("%d",&t);
@@ -25,10 +24,4 @@ int main() {
    
   }
   return 0;
-=======
-
-int main()
-{
-   
->>>>>>> 5cb317cce03923e9bc4d60cf448d871e71bc82cf
 }
