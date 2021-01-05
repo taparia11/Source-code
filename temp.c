@@ -11,14 +11,10 @@ int main()
     scanf("%d %d",&num,&b);
     c=sumd(num);
     num=c*b;
-    /*for (i = 0; i <b; i++)
+    for (i = 0; i <b; i++)
     {
         y+=c;
     }
-<<<<<<< HEAD
-    num=y;*/
-    superd(sumd(num));
-=======
         printf("Weight of input sequence = %d\nSequence that has maximum weight\n",y);
 
      for (i = 1; i <= t; ++i) 
@@ -39,7 +35,7 @@ int main()
                 }
             }
         }     
-          i=1;f=t;// avik 
+          i=1;f=t;
                 do
                 {
                    v[i]=a[i];
@@ -78,7 +74,6 @@ int main()
             
         printf("\nMaximum sequence weight = %d",y);
 
->>>>>>> 848c482c3774584a3f6364b53eb349b3757ed043
     return 0;
 
 }
