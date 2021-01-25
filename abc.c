@@ -16,7 +16,7 @@ int main(void) {
 	        scanf("%d",&check.notes[i]);
 	    }
 	    int m=0;
-	    for(i=0;i<check.n;i++)
+	   // for(i=0;i<check.n;i++)
 	    {
 	        s=s+check.notes[i];
 	    }
