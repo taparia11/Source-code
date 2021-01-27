@@ -17,20 +17,21 @@ void print(int n)
  int i,j;
  //printf("\n\nSolution %d:\n\n",++count);
  //printf("\n\n");
- for(i=1;i<=n;++i)
+ //for(i=1;i<=n;++i)
   //printf(" ");
- 
+  printf("[");
  for(i=1;i<=n;++i)
  {
-  printf("\n\n");
+ 
   for(j=1;j<=n;++j) 
   {
    if(board[i]==j)
-    printf(" Q"); 
-   else
-    printf(" -"); 
+    printf("%d ",j); 
+   //else
+    //printf(" -"); 
   }
  }
+  printf("] ");
 }
 int place(int row,int column)
 {
