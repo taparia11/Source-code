@@ -1,9 +1,4 @@
 #include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
- 
-int board[20],count;
- 
 int main()
 {
  int n,i,j;
