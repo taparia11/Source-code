@@ -55,7 +55,7 @@ void toh(int num,char from,char to,char extra){
   
   
 }
-*/
+
 #include <stdio.h>
 int main()
 {
@@ -88,4 +88,62 @@ int main()
     for(i=0;i<n;i++)
     printf("%d\t",arr[i]);
    return 0;
+}*/
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to return the number of unique triangles
+int UniqueTriangles(int a[], int b[], int c[], int n)
+{
+	vector<int> sides[n];
+
+	// Map to store the frequency of triangles
+	// with same sides
+	map<vector<int>, int> m;
+
+	for (int i = 0; i < n; i++) {
+
+		// Push all the sides of the current triangle
+		sides[i].push_back(a[i]);
+		sides[i].push_back(b[i]);
+		sides[i].push_back(c[i]);
+
+		// Sort the three sides
+		sort(sides[i].begin(), sides[i].end());
+
+		// Store the frequency of the sides
+		// of the triangle
+		m[sides[i]] = m[sides[i]] + 1;
+	}
+
+	map<vector<int>, int>::iterator i;
+
+	// To store the count of unique triangles
+	int count = 0;
+	for (i = m.begin(); i != m.end(); i++) {
+
+		// If current triangle has unique sides
+		if (i->second == 1)
+			count++;
+	}
+
+	return count;
+}
+
+// Driver code
+int main()
+{
+  int pp,i;int a[10];
+	int b[10]; 
+	int c[10];
+  scanf("%d",&pp);
+  for(i=0;i<pp;i++)
+  {
+    cin>>a[i]>>b[i]>>c[i];
+  }
+
+
+	cout << UniqueTriangles(a, b, c, pp);
+
+	return 0;
 }
