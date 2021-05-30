@@ -25,8 +25,8 @@ ptr++;
 ptr = &s[0];
 for (i = 0; i < 5; i++)
 {
-printf("\n--------------------------------\n");
-printf("Details of Student #%d\n", i + 1);
+printf("\n--------------------------------");
+printf("\nDetails of Student #%d\n", i + 1);
 printf("Reg no. of student is %d\n", ptr->regno);
 printf("Name of student is %s\n", ptr->name);
 printf("Marks of student are \n%d %d %d\n", ptr->m1, ptr->m2, ptr->m3);
